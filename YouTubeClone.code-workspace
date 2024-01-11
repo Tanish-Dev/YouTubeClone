@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "YouTubeClone",
+		"path": "."
+	},
+	{
+		"name": "thumbnails",
+		"path": "../Desktop/HTML/thumbnails"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "YouTubeClone"
+  }
+}

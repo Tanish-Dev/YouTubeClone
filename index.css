@@ -1,0 +1,277 @@
+.search {
+  padding: 0;
+  padding-left: 8px;
+  height: 38px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(202, 202, 202);
+  width: 3px;
+  flex: 1;
+  padding-left: 12px;
+  font-size: 16px;
+  border-radius: 2px 0px 0px 2px;
+  box-shadow: inset 0.5px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.search::placeholder {
+  font-family: roboto;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+.tn {
+  display: block;
+  margin-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+}
+.time {
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 7px;
+  right: 5px;
+  padding: 4px 4px;
+  font-family: roboto;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+p {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tnb {
+  display: block;
+  width: 100%;
+}
+.pp {
+  width: 36px;
+  display: inline-block;
+  vertical-align: top;
+}
+.ppin {
+  width: 100%;
+  border-radius: 50px;
+}
+.info {
+  display: inline-block;
+}
+.tt {
+  margin-bottom: 12px;
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 14px;
+}
+.nm {
+  font-family: roboto;
+  color: rgb(88, 88, 88);
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+.info1 {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.st {
+  font-family: roboto;
+  color: rgb(104, 104, 104);
+  font-size: 12px;
+}
+.vid1 {
+  display: inline-block;
+}
+.vid2 {
+  display: inline-block;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+body {
+  margin: 0;
+  padding-top: 82px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: #f9f9f9;
+}
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.left {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+.middle {
+  margin-left: 60px;
+  min-width: 10px;
+  max-width: 470px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+  flex-shrink: 0;
+  margin-left: 30px;
+  margin-right: 24px;
+}
+.logo {
+  height: 20px;
+}
+.menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 22px;
+}
+.ser-icon {
+  height: 39px;
+  border-style: none;
+  width: 64px;
+  border: 0.5px solid rgb(202, 202, 202);
+  background-color: rgb(245, 245, 245);
+  margin-left: -1px;
+  position: relative;
+  cursor: pointer;
+}
+.tooltip {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.849);
+  color: white;
+  font-family: roboto;
+  font-size: 12px;
+  padding: 8px 8px;
+  bottom: -45px;
+  opacity: 0;
+  width: auto;
+  white-space: nowrap;
+}
+.ser-icon:hover .tooltip {
+  opacity: 1;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+}
+.ser-icon:hover {
+  background-color: rgb(236, 236, 236);
+}
+.voice {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(248, 248, 248);
+  border-radius: 30px;
+  border-style: solid;
+  border: none;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.voice .tooltip {
+  left: -50px;
+}
+.voice:hover .tooltip {
+  opacity: 1;
+  transition: 0.2s ease-in-out;
+}
+.serc {
+  margin-top: 5px;
+  height: 25px;
+}
+.voi {
+  margin-top: 3px;
+  height: 24px;
+}
+.apps {
+  height: 24px;
+}
+.up {
+  height: 24px;
+}
+.note {
+  height: 24px;
+}
+.profile {
+  border-radius: 18px;
+  height: 32px;
+}
+.sidebar {
+  background-color: white;
+  width: 72px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  text-align: center;
+  z-index: 1;
+  padding-top: 4px;
+}
+.icon {
+  width: 100%;
+}
+.icons {
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: roboto;
+  justify-content: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+.icons:hover {
+  background-color: rgb(237, 237, 237);
+}
+.icons img {
+  height: 24px;
+  margin-bottom: 6px;
+}
+
+.id {
+  width: 22px;
+}
+.note-container {
+  position: relative;
+}
+.note-num {
+  position: absolute;
+  top: -2.5px;
+  right: -6px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border-radius: 10px;
+  font-family: roboto;
+  padding: 0px 4px;
+  font-size: 12px;
+  border: 2px solid white;
+}
